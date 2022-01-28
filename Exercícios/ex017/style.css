@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+body {
+    font: normal 16px Arial, Verdana, Serif;
+    text-align: left; 
+    background-image: linear-gradient(to right, #ECBEAD, #E1B29E);
+}
+h1  {
+    color: red;
+    text-align: center;
+    
+}
+h2 {
+    color: #025797;
+    text-align: left;
+}
+p {
+    text-align: justify;
+    text-indent: 25px;
+}
+main {
+    background-color: white;
+    width: 750px;
+    margin: auto;
+    border-radius: 20px;
+    height: 1px;
+    box-shadow: 5px 5px 15px #7c655cee;
+    font-family: 'Pacifico', cursive;
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
