@@ -1,0 +1,67 @@
+* {
+    color: var(--branco);
+}
+
+body {
+    background-color: var(--azul-escuro-forte);
+}
+
+#davi {
+    height: 150px;
+    clip-path: circle();
+    margin-bottom: 1.4rem;
+    margin-top: -16px;
+}
+
+.davi {
+    display: flex;
+    background-color: var(--roxo-claro);
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.davi > h2 {
+    position: relative;
+    top: 160px;
+    right: 150px;
+}
+
+.davi > p {
+    position: relative;
+    top: 120px;
+    right: 90px;
+}
+
+
+
+.relatorio {
+    position: relative;
+    top: 130px;
+}
+
+.trabalhar-img {
+    background-color: var(--laranja);
+}
+
+
+
+.exercicio-img {
+    background-color: var(--verde);
+}
+
+.jogar-img {
+    background-color: var(--azul-claro);
+}
+
+.socializar-img {
+    background-color: var(--roxo-escuro);
+}
+
+.estudar-img {
+    background-color: var(--vermelho);
+}
+
+.auto-cuidados-img {
+    background-color: var(--amarelo);
+}
