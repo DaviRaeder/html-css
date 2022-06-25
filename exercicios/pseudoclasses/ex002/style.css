@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.movies {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 42%;
+    margin-top: 16%;
+    width: 400px;
+}
+
+.movies div  {
+    color: #666;
+    padding-bottom: 5px;
+}
+
+.movies div:last-child {
+    
+    border: none;
+
+}
+
+.movies :nth-of-type() {
+
+    background-color: #DDD;
+
+}

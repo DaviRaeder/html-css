@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        @font-face {
+            font-family: 'Mali';
+            src: url(./fonts/Mali-Regular.ttf) format('opentype');
+        }
+
+        @font-face {
+            font-family: 'Josefin Sans';
+            src: url(./fonts/JosefinSans-Light.ttf) format('opentype');
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(223, 222, 222);
+        }
+
+        iframe#tela {
+            width: 95vw;
+            height: 400px;
+            border: 2px dashed black;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            font-family: 'Josefin Sans';
+            text-decoration: none;
+            color: rgb(41, 196, 123);
+            transition: .5s ease;
+        }
+
+        #link-2 {
+            margin-top: 5px; 
+            margin-bottom: 5px;
+        }
+
+        a:hover {
+            color: rgb(40, 120, 194);
+        }
+
+        h1 {
+            font-family: 'Josefin Sans';
+        }
+
+        p {
+            font-family: 'Mali';
+            font-size: 1.1em;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+    <h1>FAÇA UMA ESCOLHA</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nesciunt quaerat assumenda? Repudiandae tenetur quisquam, voluptatum ratione sequi unde aperiam sapiente ut explicabo odit cum velit perspiciatis fuga deleniti sint!</p>
+
+    <ul>
+        <li><a href="./paginas-extras/pag001.html" target="frame">PRIMEIRA PÁGINA</a></li>
+        <li id="link-2"><a href="./paginas-extras/pag002.html" target="frame">SEGUNDA PÁGINA</a></li>
+        <li><a href="./paginas-extras/pag003.html" target="frame">TERCEIRA PÁGINA</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum laboriosam inventore hic sint saepe cumque totam reprehenderit debitis aperiam accusamus. Deleniti quam nisi vel nobis rerum! Officiis cupiditate ipsa beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe veniam vitae doloremque molestias odio architecto sit temporibus. Culpa aliquam sit eligendi fugit excepturi. Beatae exercitationem, dolores quisquam atque perspiciatis ex.</p>
+
+    <iframe srcdoc="<h1>Escolha uma das opções acima</h1><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, commodi ipsum ipsam pariatur quasi quidem rerum dolore architecto minima dolorum! Aut sunt at sint iure iste culpa! Modi, beatae necessitatibus?</p><img width='150px' src='./imgs/curso-em-video.png'/>" id="tela" name="frame">
+        <p>Infelizmente seu navegador não é compatível com isso</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni enim ad iure ab architecto? Corrupti tempore blanditiis labore. At vero pariatur cupiditate minus odit accusamus porro quas explicabo possimus ex. Lorem, ipsum dolor sit amet consectetur adipisicing elit. In expedita rem dolore nihil doloremque distinctio, id qui totam consectetur asperiores iste. Corrupti neque alias velit maxime architecto, id quia eum?</p>
+</body>
+</html>

@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.my-link {
+    font-family: 'Roboto';
+    font-size: 10em;
+    color: black;
+    margin-top: 16%;
+    margin-left: 37%;
+}
+
+.my-link:link {
+    color: green;
+}
+
+
+.my-link:visited {
+    color: red;
+}
+
+.my-link:hover {
+    color: orange;
+    text-decoration: none;
+}
+
+.my-link:focus {
+    color: deepskyblue;
+}
+
+.my-link:active {
+    color: deeppink;
+}

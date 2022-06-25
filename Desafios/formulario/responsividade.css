@@ -10,9 +10,9 @@
     }
 }
 
-@media(max-height: 832px) {
+@media(max-height: 840px) {
     .botao {
         left: 50%;
-        top: 87%;
+        top: -10%;
     }
 }
