@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Hamburguer Fullscreen</title>
+    <style>
+        *,
+        *:before,
+        *:after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #81ecec;
+        }
+
+        .menu {
+            width: 60px;
+            border-radius: 50%;
+            height: 60px;
+            background: #fff;
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+        }
+
+        .hamburguer {
+            position: relative;
+            display: block;
+            width: 30px;
+            height: 2px;
+            background: #000;
+            top: 29px;
+            left: 15px;
+            transition: .5s ease-in-out;
+        }
+
+        .hamburguer:before,
+        .hamburguer:after {
+            background: #000;
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transition: .5s ease-in-out;
+        }
+
+        .hamburguer:before {
+            top: -10px;
+        }
+
+        .hamburguer:after {
+            bottom: -10px;
+        }
+
+        input {
+            display: none;
+        }
+
+        input:checked ~ label .hamburguer {
+            transform: rotate(45deg);
+        }
+
+        input:checked ~ label .hamburguer:before {
+            transform: rotate(90deg);
+            top: 0;
+        }
+
+        input:checked ~ label .hamburguer:after {
+            transform: rotate(90deg);
+            bottom: 0;
+        }
+
+        .hamburguer.active {
+            width: 100vw;
+            height: 100vh;
+            background-color: white;
+        }
+    </style>
+
+    <script src="./script.js"></script>
+</head>
+<body>
+    <input id="menu-hamburguer" type="checkbox">
+
+    <label for="menu-hamburguer" >
+    <div class="menu" onclick="clicou()">
+        <spam class="hamburguer"></spam>
+    </div>
+    </label>
+
+
+</body>
+</html>
